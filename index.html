@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Pacifico&display=swap"
       rel="stylesheet"
@@ -18,7 +19,7 @@
         <h1>AI Recepie Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="recepie-form">
           <input
             type="text"
             placeholder="Enter a ingredient"
@@ -28,11 +29,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recepie">
-          Ingredients
-          <br />
-          Instructions
-        </div>
+        <div class="recepie" id="recepie"></div>
       </main>
       <footer>
         This is an AI project coded by
