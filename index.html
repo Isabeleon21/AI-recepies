@@ -20,18 +20,21 @@
         <h1>AI Recepie Generator</h1>
       </header>
       <main>
-        <form id="recepie-form">
-          <input
-            type="text"
-            placeholder="Enter a ingredient"
-            autofocus
-            autocomplete="off"
-            class="instructions"
-            id="ingredient-input"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recepie" id="recepie"></div>
+        <div class="form-wrapper">
+          <form id="recepie-form">
+            <input
+              type="text"
+              placeholder="Enter a ingredient"
+              autofocus
+              autocomplete="off"
+              class="instructions"
+              id="ingredient-input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">ie. Pringles, Coco Pops, Cheez It</div>
+        </div>
+        <div class="recepie hidden" id="recepie"></div>
       </main>
       <footer>
         This is an AI project coded by
